@@ -110,7 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.cdma.pppd.authtype=require-pap
 
 # More CDMA properties
-ifeq ($(TARGET_DEVICE),SPH-D710)
+ifeq ($(TARGET_DEVICE),d710)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-sprint-us \
     ro.cdma.home.operator.numeric=310120 \
