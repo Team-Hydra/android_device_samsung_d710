@@ -120,8 +120,8 @@ else
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-uscelluar-us \
     ro.cdma.home.operator.numeric=311220 \
-    ro.cdma.home.operator.alpha=U.S.-Cellular \
-    net.cdma.pppd.user=user[SPACE]US-Cellular
+    ro.cdma.home.operator.alpha=U.S. Cellular \
+    net.cdma.pppd.user=user[SPACE]US Cellular
 endif
 
 # enable Google-specific location features,
