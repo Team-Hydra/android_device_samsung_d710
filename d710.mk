@@ -98,6 +98,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Telephony property for CDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=4 \
+    ro.com.google.clientidbase=android-sprint-us \
+    ro.cdma.home.operator.numeric=310120 \
+    ro.cdma.home.operator.alpha=Sprint \
+    net.cdma.pppd.authtype=require-pap \
+    net.cdma.pppd.user=user[SPACE]SprintNextel \
     net.cdma.datalinkinterface=/dev/ttyCDMA0 \
     net.interfaces.defaultroute=cdma \
     net.cdma.ppp.interface=ppp0 \
@@ -107,22 +112,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
     ro.telephony.ril.v3=skipdatareg \
     ro.ril.samsung_cdma=true \
-    net.cdma.pppd.authtype=require-pap
-
-# More CDMA properties
-ifeq ($(TARGET_DEVICE),d710)
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=android-sprint-us \
-    ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=Sprint \
-    net.cdma.pppd.user=user[SPACE]SprintNextel
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=android-uscelluar-us \
-    ro.cdma.home.operator.numeric=311220 \
-    ro.cdma.home.operator.alpha=U.S. Cellular \
-    net.cdma.pppd.user=user[SPACE]US Cellular
-endif
+    ro.carrier=Sprint
 
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector
