@@ -40,13 +40,10 @@ on fs
 
     mkdir /efs/bluetooth
     mkdir /efs/wifi
-    mkdir /efs/imei
     chown radio system /efs/bluetooth
     chown radio system /efs/wifi
-    chown radio system /efs/imei
     chmod 0775 /efs/bluetooth
     chmod 0775 /efs/wifi
-    chmod 0775 /efs/imei
 
     mkdir /data/misc/vpn/profiles 0770 system system
     mkdir /data/misc/radio 0775 radio system
