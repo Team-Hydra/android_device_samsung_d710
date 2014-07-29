@@ -90,7 +90,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.usb.setting=0 \
     persist.service.adb.enable=1 \
-    persist.sys.usb.config=mass_storage,adb \
     persist.service.usb.hubport=4
 
 # Telephony property for CDMA
