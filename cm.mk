@@ -30,7 +30,7 @@ $(call inherit-product, device/samsung/d710/full_d710.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d710
 PRODUCT_NAME := cm_d710
-PRODUCT_BRAND := Samsung
+PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SPH-D710 
 
 #Set build fingerprint
