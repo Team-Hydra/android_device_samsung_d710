@@ -45,14 +45,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
-# Net
+# Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
-    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down
-
-PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ip-down:system/etc/ppp/ip-down \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
+    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf \
+    $(LOCAL_PATH)/configs/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
