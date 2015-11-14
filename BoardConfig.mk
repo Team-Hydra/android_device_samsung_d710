@@ -28,15 +28,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 
 # Selinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/d710/selinux
-
-BOARD_SEPOLICY_UNION += \
-    device.te \
-    file.te \
-    file_contexts \
-    mediaserver.te \
-    wimax.te
+BOARD_SEPOLICY_DIRS += device/samsung/d710/selinux
 
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
