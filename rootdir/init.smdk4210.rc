@@ -379,9 +379,6 @@ on boot
 # TelephonyManager.java requires this
     chmod 0644 /proc/cmdline
 
-# Device Encryption by B2B Security Lab.
-    setprop ro.crypto.keyfile.userdata /efs/metadata
-
 # fake some battery state
     setprop status.battery.state Slow
     setprop status.battery.level 5
