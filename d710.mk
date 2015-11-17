@@ -18,7 +18,6 @@ LOCAL_PATH := device/samsung/d710
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/rootdir/fstab.smdk4210:root/fstab.smdk4210 \
     $(LOCAL_PATH)/rootdir/init.smdk4210.rc:root/init.smdk4210.rc \
-    $(LOCAL_PATH)/rootdir/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
 
 # These are the hardware-specific features

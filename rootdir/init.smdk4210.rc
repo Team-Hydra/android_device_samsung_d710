@@ -250,8 +250,6 @@ on post-fs-data
     chmod 0660 /sys/class/rfkill/rfkill0/state
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
-    restorecon /sys/class/rfkill/rfkill0/state
-    restorecon /sys/class/rfkill/rfkill0/type
 
 # Vibetonz
     chmod 0660 /dev/tspdrv
@@ -274,9 +272,6 @@ on post-fs-data
     chown system media_rw /sys/class/mdnie/mdnie/negative
     write /sys/class/mdnie/mdnie/scenario 0
     write /sys/class/mdnie/mdnie/mode 1
-    restorecon /sys/class/mdnie/mdnie/scenario
-    restorecon /sys/class/mdnie/mdnie/mode
-    restorecon /sys/class/mdnie/mdnie/negative
 
 # Permissions for uart_sel and usb_sel
     chown system radio /sys/class/sec/switch/uart_sel/value
@@ -487,6 +482,19 @@ service bugreport /system/bin/dumpstate -d -p -B \
     disabled
     oneshot
     keycodes 114 115 116
+
+## CyanogenMod Performance Profiles
+# Powersave
+on property:sys.perf.profile=0
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor powersave
+
+# Balanced
+on property:sys.perf.profile=1
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
+
+# Performance
+on property:sys.perf.profile=2
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
 
 on property:init.svc.macloader=stopped
     chown system root /data/.cid.info
