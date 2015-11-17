@@ -53,6 +53,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
+# Netmgr dependency on libstlport
+PRODUCT_PACKAGES +=  libstlport
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.exynos4
