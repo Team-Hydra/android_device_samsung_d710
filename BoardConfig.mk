@@ -47,7 +47,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/d710/rootdir/fstab.smdk4210
 # assert
 TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-D710BST
 
-COMMON_GLOBAL_CFLAGS += -DRIL_PRE_M_BLOBS
+COMMON_GLOBAL_CFLAGS += -DRIL_PRE_M_BLOBS -DBOARD_CUSTOM_BOOTIMG
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/d710/BoardConfigVendor.mk
