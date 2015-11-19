@@ -43,6 +43,7 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/d710/recovery/recovery_
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun%d/file"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
 TARGET_RECOVERY_FSTAB := device/samsung/d710/rootdir/fstab.smdk4210
+DONT_MAKE_RECOVERY_PATCH := true
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-D710BST
