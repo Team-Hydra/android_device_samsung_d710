@@ -48,7 +48,7 @@ DONT_MAKE_RECOVERY_PATCH := true
 # assert
 TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-D710BST
 
-COMMON_GLOBAL_CFLAGS += -DRIL_PRE_M_BLOBS -DBOARD_CUSTOM_BOOTIMG
+COMMON_GLOBAL_CFLAGS += -DRIL_PRE_M_BLOBS
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/d710/BoardConfigVendor.mk
